@@ -1,0 +1,49 @@
+/*hero section*/
+.hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      $darkest-background-color,
+      $darkest-background-color
+    ),
+    url('../images/hero/Header-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $darkest-background-color;
+}
+.hero-padding {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.mane-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: $hero-letter-spacing;
+  text-transform: uppercase;
+  color: $white-accent-color;
+}
+.mane-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: flex;
+  margin: auto;
+  min-width: 200px;
+  border: 1px solid transparent;
+
+  font-weight: $secondary-font-weight;
+  font-size: $form-font-size;
+  line-height: $hero-line-height;
+
+  letter-spacing: $hero-letter-spacing;
+  color: $white-accent-color;
+  background-color: $accent-color;
+}

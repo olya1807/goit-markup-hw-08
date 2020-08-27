@@ -1,0 +1,33 @@
+/*чем мы занимаемся*/
+
+.what-we-do-list {
+  display: flex;
+}
+.what-we-do-list-item {
+  position: relative;
+  width: 370px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.what-we-do-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: $white-accent-color;
+  background-color: $darkest-background-color;
+  text-align: center;
+  letter-spacing: $primary-letter-spacing;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-bottom: 0px;
+}
+.what-we-do-img {
+  display: block;
+}
+.what-we-do-padding {
+  padding-bottom: 94px;
+}
