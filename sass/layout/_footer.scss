@@ -1,0 +1,180 @@
+/*footer*/
+footer {
+  background-color: $footer-backgroung;
+  display: flex;
+}
+.footer-section {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.logo-footer {
+  font-family: $secondary-font-family;
+  font-weight: $secondary-font-weight;
+  font-size: $secondary-font-size;
+  line-height: $primary-line-height;
+  letter-spacing: $primary-letter-spacing;
+  color: $white-accent-color;
+}
+.footer-address {
+  width: 231px;
+  padding-top: 60px;
+  justify-content: flex-start;
+}
+.contact-us {
+  margin-top: 20px;
+}
+.footer-place {
+  display: block;
+  font-weight: $primary-font-weight;
+  margin-bottom: 9px;
+  line-height: $footer-line-height;
+  letter-spacing: $primary-letter-spacing;
+  color: $white-accent-color;
+}
+.footer-mail {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  font-weight: $primary-font-weight;
+  line-height: $footer-line-height;
+  letter-spacing: $primary-letter-spacing;
+  color: $footer-contacts-color;
+}
+.footer-phone {
+  display: block;
+  font-weight: $primary-font-weight;
+  line-height: $footer-line-height;
+  letter-spacing: $primary-letter-spacing;
+  color: $footer-contacts-color;
+  margin-bottom: 60px;
+  margin-top: 9px;
+}
+.join {
+  display: block;
+  width: 206px;
+  font-weight: $secondary-font-weight;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  margin-right: 94px;
+  line-height: $secondary-line-height;
+  color: $white-accent-color;
+  text-transform: uppercase;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 100px;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-list-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: $footer-contacts-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-social-list-icon-svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: $white-accent-color;
+  stroke-width: 1px;
+  stroke: $white-accent-color;
+}
+
+.follow-us {
+  display: block;
+  width: 570px;
+  align-items: center;
+  margin-top: 72px;
+  margin-bottom: 94px;
+
+  justify-content: flex-start;
+}
+
+.follow-us-mailing {
+  width: 100%;
+  font-weight: $secondary-font-weight;
+  line-height: $secondary-line-height;
+  letter-spacing: $primary-letter-spacing;
+  color: $white-accent-color;
+  text-transform: uppercase;
+}
+
+.form-contact-us {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.form-contact-us-input {
+  width: 358px;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-family: $primary-font-family;
+  font: 1em $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: $form-font-size;
+  line-height: $form-line-height;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  letter-spacing: $primary-letter-spacing;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+  display: flex;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: auto;
+  margin-left: 12px;
+  min-width: 200px;
+  border: 1px solid;
+  border-color: $accent-color;
+
+  font-weight: $secondary-font-weight;
+  font-size: $form-font-size;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  align-items: center;
+  padding-right: auto;
+  color: $white-accent-color;
+  background-color: $accent-color;
+  cursor: pointer;
+}
+.fly-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

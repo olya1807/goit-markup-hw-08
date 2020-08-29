@@ -1,0 +1,12 @@
+.flex-social-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

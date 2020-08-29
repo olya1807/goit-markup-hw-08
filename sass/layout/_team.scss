@@ -1,0 +1,98 @@
+/*Наша команда*/
+.our-team-list-item {
+  width: 270px;
+  padding-bottom: 24px;
+  background-color: $white-accent-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.photo-team {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.flex-social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.flex-social-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-list-icon-svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  stroke-width: 1px;
+  stroke: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-list-item-link:hover & {
+    fill: $white-accent-color;
+    stroke-width: 1px;
+    stroke: $white-accent-color;
+  }
+  .social-list-item-link:focus & {
+    fill: $white-accent-color;
+    stroke-width: 1px;
+    stroke: $white-accent-color;
+  }
+}
+
+.team-item {
+  font-weight: $middle-font-weight;
+  font-size: $form-font-size;
+  text-transform: none;
+  line-height: $primary-line-height;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.profession {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: $primary-font-weight;
+  font-size: $form-font-size;
+  line-height: $primary-line-height;
+  letter-spacing: $primary-letter-spacing;
+  text-align: center;
+}
+.our-team-padding {
+  padding-bottom: 94px;
+}
