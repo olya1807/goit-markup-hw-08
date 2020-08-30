@@ -21,7 +21,7 @@
         <a href="./index.html" class="logotype link" aria-label="Логотип">
           <span class="name">Web</span>Studio</a
         >
-        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper">
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
           <svg width="40" height="40">
             <use
               class="burger-menu-open"
@@ -32,7 +32,7 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" data-menu>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-list-item">
@@ -77,18 +77,19 @@
       </div>
     </header>
     <main>
-      <!--HERO секция-->
-      <!-- <section class="hero">
+
+  <!---HERO секция-->
+      <section class="hero">
         <div class="container hero-padding centered">
           <h1 class="mane-header">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <button class="mane-button" data-modal-open>Заказать услугу</button>
-        </div> -->
+        </div>
 
       <!--Модальное окно-->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="button-modal-close" data-modal-close>
               <svg class="button-close-svg">
@@ -180,12 +181,11 @@
                 Отправить
               </button>
             </form>
-          
         </div>
-      </section> -->
+      </section>
 
       <!--О нас-->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 hidden>О нас</h2>
           <ul class="about-us-list">
@@ -239,9 +239,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Чем мы занимаемся-->
-      <!-- <section class="section what-we-do-padding">
+      <section class="section what-we-do-padding">
         <div class="container centered">
           <h2>Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
@@ -277,21 +277,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Наша команда-->
-      <!-- <section class="section coloured our-team-padding">
+      <section class="section coloured our-team-padding">
         <div class="container centered">
-          <h2>Наша команда</h2>
+          <h2 class="team-header">Наша команда</h2>
           <ul class="about-us-list">
             <li class="our-team-list-item">
-              <img
+         <img
                 class="photo-team"
-                src="./images/our-team/our-team-img-1.jpg"
+                  srcset="./images/our-team/team-member-1-mobile-1x.jpg 1x, ./images/our-team/team-member-1-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)" ;
+                  srcset="./images/our-team/team-member-1-desktop-1x.jpg 1x, ./images/our-team/team-member-1-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)";
+                  srcset="./images/our-team/team-member-1-tablet-1x.jpg 1x, ./images/our-team/team-member-1-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)";
                 alt="Дизайнер"
-                width="270"
-                height="260"
               />
-              <h3 class="team-item">Николай Кучеренко</h3>
+
+              <h3 class="team-item">Игорь Демьяненко</h3>
               <p lang="en" class="profession">Product Designer</p>
               <ul class="flex-social-list">
                 <li class="flex-social-item">
@@ -343,12 +347,15 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                src="./images/our-team/our-team-img-2.jpg"
+                  srcset="./images/our-team/team-member-2-mobile-1x.jpg 1x, ./images/our-team/team-member-2-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)" ;
+                  srcset="./images/our-team/team-member-2-desktop-1x.jpg 1x, ./images/our-team/team-member-2-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)";
+                  srcset="./images/our-team/team-member-2-tablet-1x.jpg 1x, ./images/our-team/team-member-2-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)";
                 alt="Разработчик"
-                width="270"
-                height="260"
               />
-              <h3 class="team-item">Ольга Иванова</h3>
+              <h3 class="team-item">Ольга Репина</h3>
               <p lang="en" class="profession">Frontend Developer</p>
               <ul class="flex-social-list">
                 <li class="flex-social-item">
@@ -400,12 +407,15 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                src="./images/our-team/our-team-img-3.jpg"
+                srcset="./images/our-team/team-member-3-mobile-1x.jpg 1x, ./images/our-team/team-member-3-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)" ;
+                  srcset="./images/our-team/team-member-3-desktop-1x.jpg 1x, ./images/our-team/team-member-3-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)";
+                  srcset="./images/our-team/team-member-3-tablet-1x.jpg 1x, ./images/our-team/team-member-3-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)";
                 alt="Маркетолог"
-                width="270"
-                height="260"
               />
-              <h3 class="team-item">Андрей Шевченко</h3>
+              <h3 class="team-item">Николай Тарасов</h3>
               <p lang="en" class="profession">Marketing</p>
               <ul class="flex-social-list">
                 <li class="flex-social-item">
@@ -457,12 +467,15 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                src="./images/our-team/our-team-img-4.jpg"
+                  srcset="./images/our-team/team-member-4-mobile-1x.jpg 1x, ./images/our-team/team-member-4-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)" ;
+                  srcset="./images/our-team/team-member-4-desktop-1x.jpg 1x, ./images/our-team/team-member-4-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)";
+                  srcset="./images/our-team/team-member-4-tablet-1x.jpg 1x, ./images/our-team/team-member-4-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)";
                 alt="Дизайнер интерфейсов"
-                width="270"
-                height="260"
               />
-              <h3 class="team-item">Иван Николаев</h3>
+              <h3 class="team-item">Михаил Ермаков</h3>
               <p lang="en" class="profession">UI Designer</p>
               <ul class="flex-social-list">
                 <li class="flex-social-item">
@@ -513,11 +526,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Постоянные клиенты-->
-      <!-- <section class="section clients-padding">
+      <section class="section clients-padding">
         <div class="container">
-          <h2>Постоянные клиенты</h2>
+          <h2 class="client-header">Постоянные клиенты</h2>
           <ul class="flex-client-list">
             <li class="flex-client-item">
               <a
@@ -587,10 +600,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     
-    <!-- <footer>
+    <footer>
 
       <div class="container footer-section">
         <div class="footer-address">
@@ -690,7 +703,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
