@@ -797,7 +797,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   footer {
-    width: 1600px;
+    width: 1200px;
     height: 252px;
     text-align: left;
   }
