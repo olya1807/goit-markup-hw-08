@@ -1,20 +1,74 @@
 /*Наша команда*/
+.our-team-padding {
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+.coloured {
+  background-color: $middle-dark-backgroud-color;
+}
+.team-header {
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
 .our-team-list-item {
-  width: 270px;
-  padding-bottom: 24px;
+  width: 450px;
+  height: 622px;
   background-color: $white-accent-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  }
+
+  &:nth-child(2n + 1) {
+    @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+    padding-bottom: 24px;
+  }
+
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 }
-
 .photo-team {
-  justify-content: space-between;
+  width: 450px;
+  height: 460px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+    justify-content: space-between;
+  }
 }
 .flex-social-list {
   padding: 0;
@@ -23,6 +77,7 @@
   display: flex;
   justify-content: center;
 }
+
 .flex-social-item {
   width: 44px;
   height: 44px;
@@ -76,23 +131,21 @@
 }
 
 .team-item {
+  margin-bottom: 10px;
   font-weight: $middle-font-weight;
   font-size: $form-font-size;
   text-transform: none;
   line-height: $primary-line-height;
   text-align: center;
-  margin-bottom: 10px;
 }
+
 .profession {
+  margin-bottom: 16px;
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 16px;
   font-weight: $primary-font-weight;
   font-size: $form-font-size;
   line-height: $primary-line-height;
   letter-spacing: $primary-letter-spacing;
   text-align: center;
-}
-.our-team-padding {
-  padding-bottom: 94px;
 }

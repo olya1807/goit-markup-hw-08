@@ -25,8 +25,19 @@
   display: block;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  border-color: transparent;
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   background-color: $white-accent-color;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -77,11 +88,17 @@
 }
 
 .contact-form {
-  width: 528px;
-  min-height: 581px;
+  width: 370px;
+  height: 342px;
+
   margin: 0 auto;
-  outline: 1px solid black;
-  padding: 40px;
+
+  // outline: 1px solid black;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .contact-form-header {
   width: 100%;
@@ -103,6 +120,7 @@
   justify-content: center;
   align-items: center;
   top: 50%;
+
   left: 42px;
   transform: translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -267,11 +285,18 @@
   width: 401px;
   margin-left: 20px;
   font-weight: $primary-font-weight;
-  font-size: $modal-font-size;
-  line-height: $footer-line-height;
+
   letter-spacing: $primary-letter-spacing;
 
   color: $primary-text-color;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: $modal-font-size;
+    line-height: $footer-line-height;
+  }
 }
 .form-checkbox-icon {
   position: absolute;
@@ -286,23 +311,35 @@
 .form-checkbox-text {
   font-family: $primary-font-family;
   font-weight: $primary-font-weight;
-  font-size: $modal-font-size;
-  line-height: $footer-line-height;
   letter-spacing: $primary-letter-spacing;
-
   color: $primary-text-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: $modal-font-size;
+    line-height: $footer-line-height;
+  }
 }
 
 .form-checkbox-link {
   display: block;
   font-weight: $primary-font-weight;
-  font-size: $modal-font-size;
-  line-height: $footer-line-height;
 
   letter-spacing: $primary-letter-spacing;
   margin-left: 3px;
 
   color: $accent-color;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: $modal-font-size;
+    line-height: $footer-line-height;
+  }
 }
 
 .submit-button {

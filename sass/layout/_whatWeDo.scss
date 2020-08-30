@@ -29,5 +29,9 @@
   display: block;
 }
 .what-we-do-padding {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   padding-bottom: 94px;
 }

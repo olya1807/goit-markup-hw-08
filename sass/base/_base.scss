@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   color: $primary-text-color;
 }
+
 ul {
   padding: 0;
   margin: 0;
@@ -23,6 +24,7 @@ h2 {
   letter-spacing: 0.03em;
   color: $title-text-color;
 }
+
 h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -31,4 +33,14 @@ h3 {
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-text-color;
+}
+.photo {
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 4px;
+  background-color: $middle-dark-backgroud-color;
 }

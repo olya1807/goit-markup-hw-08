@@ -1,44 +1,83 @@
 /* О нас*/
-
-.photo {
-  display: block;
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  border-radius: 4px;
-  background-color: $middle-dark-backgroud-color;
-}
-.about-us-padding {
-  padding-top: 30px;
-}
-.about-us-list-icon {
-  display: flex;
-  width: 270px;
-  height: 120px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.about--us-list-svg {
-  width: 70px;
-  height: 70px;
-  padding: auto;
-  margin: auto;
-}
-/* О нас*/
-
 .about-us-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .about-us-list-item {
-  width: 270px;
-  background-color: $white-accent-color;
-  border-radius: 0px 0px 4px 4px;
-
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 251px;
+  }
+  &:nth-child(2n + 1) {
     margin-right: 30px;
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  &:not(:last-child) {
+    background-color: $white-accent-color;
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.about-us-list-icon {
+  max-width: 450px;
+  height: 120px;
+  padding-top: 25px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    width: 354px;
+    padding-top: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 270px;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+}
+.about--us-list-svg {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.about-us-padding {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    // padding-top: 30px;
   }
 }
 
@@ -48,8 +87,6 @@
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.coloured {
-  background-color: $middle-dark-backgroud-color;
+  @media screen and (min-width: 1200px) {
+  }
 }
