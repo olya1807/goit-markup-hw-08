@@ -52,11 +52,14 @@ h3 {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -68,7 +71,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -1334,7 +1337,7 @@ h3 {
 
 /*footer*/
 footer {
-  width: 480px;
+  width: 100%;
   height: 603px;
   text-align: center;
   padding-bottom: 60px;
@@ -1343,7 +1346,6 @@ footer {
 
 @media screen and (min-width: 768px) {
   footer {
-    width: 768px;
     height: 463px;
     display: flex;
   }
@@ -1351,7 +1353,6 @@ footer {
 
 @media screen and (min-width: 1200px) {
   footer {
-    width: 1200px;
     height: 252px;
     text-align: left;
   }
@@ -1584,12 +1585,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 768px) {
-  .form-contact-us-input {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .form-contact-us-input {
     width: 358px;
@@ -1725,6 +1720,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .flex-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .flex-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1757,6 +1758,13 @@ footer {
   height: 294px;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-item .example-photo {
+    width: 354px;
+    height: 294px;
+  }
+}
+
 .flex-item .overlay {
   position: relative;
   overflow: hidden;
@@ -1773,6 +1781,15 @@ footer {
   margin-right: 24px;
   padding-top: 20px;
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-item .portfolio-title {
+    width: 306px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .flex-item .portfolio-title-meaning {

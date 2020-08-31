@@ -82,6 +82,12 @@
     height: 404px;
     margin-left: auto;
     margin-right: auto;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -111,6 +117,10 @@
     display: block;
     width: 450px;
     height: 294px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
   }
   .overlay {
     position: relative;
@@ -127,6 +137,12 @@
     margin-right: 24px;
     padding-top: 20px;
     margin-bottom: 0px;
+    @media screen and (min-width: 768px) {
+      width: 306px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
   .portfolio-title-meaning {
     margin-top: 4px;
