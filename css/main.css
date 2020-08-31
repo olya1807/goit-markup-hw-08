@@ -1344,8 +1344,15 @@ footer {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   footer {
+    justify-content: center;
     height: 463px;
     display: flex;
   }

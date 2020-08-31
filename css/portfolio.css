@@ -1344,8 +1344,15 @@ footer {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   footer {
+    justify-content: center;
     height: 463px;
     display: flex;
   }
@@ -1630,7 +1637,13 @@ footer {
 
 /*portfolio*/
 .portfolio-padding {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-padding {
+    padding-bottom: 94px;
+  }
 }
 
 .button-container {
@@ -1697,6 +1710,12 @@ footer {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-container {
+    justify-content: start;
+  }
+}
+
 .flex-item {
   width: 450px;
   height: 404px;
@@ -1717,8 +1736,6 @@ footer {
   .flex-item {
     width: 354px;
     height: 404px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .flex-item:not(:last-child) {
     margin-bottom: 60px;

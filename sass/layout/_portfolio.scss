@@ -1,6 +1,9 @@
 /*portfolio*/
 .portfolio-padding {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .button-container {
   display: flex;
@@ -60,6 +63,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
 .flex-item {
   width: 450px;
@@ -80,8 +86,6 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 404px;
-    margin-left: auto;
-    margin-right: auto;
     &:not(:last-child) {
       margin-bottom: 60px;
     }
