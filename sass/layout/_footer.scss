@@ -7,8 +7,9 @@ footer {
 
   @media screen and (max-width: 767px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px), (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
     height: 463px;
     display: flex;
