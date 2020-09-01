@@ -2,15 +2,22 @@
 .portfolio-padding {
   padding-bottom: 60px;
   z-index: 0;
+  @media screen and (max-width: 479px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
   }
 }
 .button-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   margin-bottom: 40px;
+
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
@@ -22,13 +29,19 @@
 }
 .work-item:not(:last-child) {
   margin-right: 10px;
-  display: flex;
-  justify-content: center;
+
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
 
   @media screen and (max-width: 767px) {
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 15px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
   }
 }
 .portfolio-button {
@@ -57,14 +70,22 @@
 }
 
 .flex-container {
-  display: flex;
+  @media screen and (max-width: 480px) {
+    display: inline-block;
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 480px) {
+    display: flex;
 
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
   @media screen and (min-width: 768px) {
     justify-content: start;
   }
@@ -123,9 +144,9 @@
   }
   .example-photo {
     display: block;
-
-    width: 450px;
-    height: 294px;
+    width: 100%;
+    // width: 450px;
+    // height: 294px;
     @media screen and (min-width: 768px) {
       width: 354px;
       height: 294px;

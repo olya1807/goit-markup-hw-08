@@ -1,6 +1,5 @@
 /*footer*/
 footer {
-  width: 100%;
   height: 603px;
   text-align: center;
   padding-bottom: 60px;
@@ -9,7 +8,7 @@ footer {
   @media screen and (max-width: 767px) {
     padding-top: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px), (max-width: 1199px) {
     justify-content: center;
     height: 463px;
     display: flex;
@@ -161,6 +160,7 @@ footer {
 
 .follow-us {
   display: block;
+  width: 100%;
   // width: 570px;
   align-items: center;
   // margin-top: 72px;
@@ -205,8 +205,9 @@ footer {
 }
 
 .form-contact-us-input {
-  width: 450px;
-  height: 50px;
+  // width: 450px;
+  width: 100%;
+  // height: 50px;
   background-color: transparent;
 
   @media screen and (min-width: 1200px) {
@@ -234,7 +235,7 @@ footer {
 
 .footer-button {
   justify-content: center;
-  min-width: 200px;
+  // min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   margin: auto;
