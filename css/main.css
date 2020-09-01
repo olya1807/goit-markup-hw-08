@@ -516,7 +516,7 @@ h3 {
   .menu-btn {
     background-color: transparent;
     border: none;
-    z-index: 1000;
+    z-index: 1;
   }
   .menu-btn.is-open .burger-menu-close {
     display: block;
@@ -575,7 +575,7 @@ h3 {
   .menu-wrapper.is-open {
     transform: translateY(0);
     opacity: 1;
-    z-index: 100;
+    z-index: 1;
     background-color: #ffffff;
   }
 }
