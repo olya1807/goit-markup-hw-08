@@ -81,6 +81,7 @@
 .menu-wrapper {
   font-family: $primary-font-family;
   font-weight: $middle-font-weight;
+  pointer-events: none;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -92,6 +93,7 @@
     height: 453px;
     padding-top: 60px;
     padding-bottom: 60px;
+
     // padding-left: 140px;
     // padding-right: 140px;
 
@@ -110,6 +112,7 @@
       transform: translateY(0);
       opacity: 1;
       z-index: 1;
+      pointer-events: all;
       background-color: $white-accent-color;
     }
   }

@@ -552,6 +552,7 @@ h3 {
 .menu-wrapper {
   font-family: Roboto;
   font-weight: 500;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -576,6 +577,7 @@ h3 {
     transform: translateY(0);
     opacity: 1;
     z-index: 1;
+    pointer-events: all;
     background-color: #ffffff;
   }
 }
@@ -913,9 +915,12 @@ h3 {
   }
 }
 
+.about-us-list {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   .about-us-list {
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1074,6 +1079,12 @@ h3 {
 
 .coloured {
   background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 767px) {
+  .coloured {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 767px) {

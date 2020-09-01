@@ -1,12 +1,16 @@
 /*Наша команда*/
 .our-team-padding {
   padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
   }
 }
 .coloured {
   background-color: $middle-dark-backgroud-color;
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
 }
 .team-header {
   @media screen and (max-width: 767px) {

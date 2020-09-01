@@ -5,8 +5,8 @@
   }
 }
 .about-us-list {
+  display: inline-block;
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
@@ -73,8 +73,8 @@
   height: 70px;
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
-  }
+  // @media screen and (min-width: 1200px) {
+  // }
 }
 
 .about-us-padding {
