@@ -27,7 +27,7 @@
   left: 50%;
   border-color: transparent;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     min-width: 450px;
     min-height: 609px;
     padding: 40px;
@@ -36,6 +36,7 @@
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
+    padding: 40px;
   }
 
   background-color: $white-accent-color;
