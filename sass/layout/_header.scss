@@ -120,6 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    pointer-events: all;
   }
   @media screen and (max-width: 1199px) {
     display: flex;
