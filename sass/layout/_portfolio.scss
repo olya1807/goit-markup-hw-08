@@ -70,8 +70,9 @@
   }
 }
 .flex-item {
-  width: 450px;
-  height: 404px;
+  // width: 450px;
+  // height: 404px;
+  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 30px;

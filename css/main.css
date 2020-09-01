@@ -924,11 +924,6 @@ h3 {
 @media screen and (min-width: 768px) {
   .about-us-list {
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about-us-list {
     display: flex;
   }
 }
@@ -1258,9 +1253,18 @@ h3 {
   text-align: left;
 }
 
+@media screen and (max-width: 480px) {
+  .flex-client-list {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
 .flex-client-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {

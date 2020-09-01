@@ -8,9 +8,11 @@
 }
 
 .flex-client-list {
-  // @media screen and (max-width: 767px) {
-  //   display: inline-block;
-  // }
+  @media screen and (max-width: 480px) {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +23,7 @@
 .flex-client-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media screen and (max-width: 767px) {
     &:nth-child(odd) {
@@ -117,6 +120,7 @@
 
 .clients-padding {
   padding-bottom: 60px;
+
   // @media screen and (max-width: 767px) {
   //   display: inline-block;
   // }
