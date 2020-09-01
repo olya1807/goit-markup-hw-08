@@ -81,7 +81,9 @@
 .menu-wrapper {
   font-family: $primary-font-family;
   font-weight: $middle-font-weight;
-  pointer-events: none;
+  @media screen and (max-width: 767px) {
+    pointer-events: none;
+  }
 
   @media screen and (max-width: 767px) {
     position: absolute;

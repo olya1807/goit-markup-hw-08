@@ -552,7 +552,12 @@ h3 {
 .menu-wrapper {
   font-family: Roboto;
   font-weight: 500;
-  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper {
+    pointer-events: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
