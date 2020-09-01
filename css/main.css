@@ -556,14 +556,9 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .menu-wrapper {
-    pointer-events: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu-wrapper {
     position: absolute;
     opacity: 0;
+    pointer-events: none;
     width: 100%;
     top: 100%;
     left: 0;
