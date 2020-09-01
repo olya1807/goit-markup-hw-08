@@ -5,6 +5,7 @@ footer {
   text-align: center;
   padding-bottom: 60px;
   background-color: $footer-backgroung;
+
   @media screen and (max-width: 767px) {
     padding-top: 60px;
   }
@@ -176,11 +177,13 @@ footer {
     width: 570px;
   }
 }
-// .follow-us-block {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.follow-us-block {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .follow-us-mailing {
   // width: 100%;
@@ -205,9 +208,6 @@ footer {
   width: 450px;
   height: 50px;
   background-color: transparent;
-  // @media screen and (max-width: 767px) {
-  //   width: 100%;
-  // }
 
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -255,7 +255,7 @@ footer {
   @media screen and (max-width: 1199px) {
     margin-top: 20px;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1199px) {
     display: flex;
   }
 }

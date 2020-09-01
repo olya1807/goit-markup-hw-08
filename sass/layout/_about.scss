@@ -1,4 +1,9 @@
 /* О нас*/
+.section-about-us {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+}
 .about-us-list {
   @media screen and (min-width: 768px) {
     display: flex;

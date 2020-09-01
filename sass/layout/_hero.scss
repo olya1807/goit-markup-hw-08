@@ -12,18 +12,19 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../images/hero/Header-mobile-1x.jpg);
+    url(../images/hero/Header-mobile@1x.jpg);
 }
 
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
+    background-size: cover;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/hero/Header-mobile-2x.jpg');
+      url('../images/hero/Header-mobile@1x.jpg');
   }
   .hero-title {
     font-size: 26px;
@@ -38,7 +39,7 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/hero/Header-mobile-2x.jpg');
+        url('../images/hero/Header-mobile@2x.jpg');
     }
   }
 }
@@ -50,6 +51,10 @@
 .hero-padding {
   padding-top: 118px;
   padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .mane-header {
@@ -61,22 +66,12 @@
   line-height: 1.62;
 
   text-align: center;
-  $hero-letter-spacing: 0.06em;
+  letter-spacing: $hero-letter-spacing;
   text-transform: uppercase;
 
   color: $white-accent-color;
 }
 
-// margin-top: 0;
-// margin-bottom: 30px;
-// font-weight: 900;
-// font-size: 44px;
-// line-height: 1.36;
-
-// letter-spacing: $hero-letter-spacing;
-// text-transform: uppercase;
-// color: $white-accent-color;
-// }
 .mane-button {
   border-radius: 4px;
   padding: 10px 32px;
@@ -101,7 +96,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/hero/Header-tablet-1x.jpg');
+      url('../images/hero/Header-tablet@1x.jpg');
   }
   .hero-title {
     font-size: 26px;
@@ -116,19 +111,20 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/hero/Header-tablet-2x.jpg');
+        url('../images/hero/Header-tablet@2x.jpg');
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: 100%;
+    height: 600px;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/hero/Header-dektop-1x.jpg');
+      url('../images/hero/Header-dektop@1x.jpg');
   }
   .hero-title {
     font-size: 44px;
@@ -143,7 +139,30 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/hero/Header-dektop-2x.jpg');
+        url('../images/hero/Header-dektop@2x.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    width: 1600px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/hero/Header-dektop@1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/hero/Header-dektop@2x.jpg');
     }
   }
 }

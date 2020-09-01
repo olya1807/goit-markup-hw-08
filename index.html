@@ -59,8 +59,8 @@
                 <li class="address-list">
                   <a class="address-link link" href="mailto:info@devstudio.com">
                     <svg width="16" height="11" class="address-icon">
-                      <use href="./images/sprite.svg#mail"></use></svg
-                    >info@devstudio.com</a
+                      <use href="./images/sprite.svg#mail"></use>
+                      </svg>info@devstudio.com</a
                   >
                 </li>
                 <li class="address-list">
@@ -82,12 +82,12 @@
       <section class="hero">
         <div class="container hero-padding centered">
           <h1 class="mane-header">
-            Эффективные решения <br />
+            Эффективные решения <br/>
             для вашего бизнеса
           </h1>
           <button class="mane-button" data-modal-open>Заказать услугу</button>
         </div>
-
+      
       <!--Модальное окно-->
       <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -182,10 +182,9 @@
               </button>
             </form>
         </div>
-      </section>
-
+        </section>
       <!--О нас-->
-      <section class="section">
+      <section class="section section-about-us">
         <div class="container">
           <h2 hidden>О нас</h2>
           <ul class="about-us-list">
@@ -248,7 +247,8 @@
             <li class="what-we-do-list-item">
               <img
                 class="what-we-do-img"
-                src="./images/what-we-do/what-we-do-img-1.jpg"
+                srcset="./images/what-we-do/img1@1x.jpg 1x, ./images/what-we-do/img1@2x.jpg 2x"
+                  media="(min-width: 1200px)";
                 alt="Ноутбук"
                 width="370"
                 height="294"
@@ -257,8 +257,8 @@
             </li>
             <li class="what-we-do-list-item">
               <img
-                class="what-we-do-img"
-                src="./images/what-we-do/what-we-do-img-2.jpg"
+               srcset="./images/what-we-do/img2@1x.jpg 1x, ./images/what-we-do/img2@2x.jpg 2x"
+                  media="(min-width: 1200px)";
                 alt="Мобильный телефон"
                 width="370"
                 height="294"
@@ -268,7 +268,9 @@
             <li class="what-we-do-list-item">
               <img
                 class="what-we-do-img"
-                src="./images/what-we-do/what-we-do-img-3.jpg"
+                <img
+               srcset="./images/what-we-do/img3@1x.jpg 1x, ./images/what-we-do/img3@2x.jpg 2x"
+                  media="(min-width: 1200px)";
                 alt="Дизайн сайта"
                 width="370"
                 height="294"
@@ -286,11 +288,11 @@
             <li class="our-team-list-item">
          <img
                 class="photo-team"
-                  srcset="./images/our-team/team-member-1-mobile-1x.jpg 1x, ./images/our-team/team-member-1-mobile-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-1-mobile@1x.jpg 1x, ./images/our-team/team-member-1-mobile@2x.jpg 2x"
                   media="(max-width: 767px)" ;
-                  srcset="./images/our-team/team-member-1-desktop-1x.jpg 1x, ./images/our-team/team-member-1-desktop-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-1-desktop@1x.jpg 1x, ./images/our-team/team-member-1-desktop@2x.jpg 2x"
                   media="(min-width: 1200px)";
-                  srcset="./images/our-team/team-member-1-tablet-1x.jpg 1x, ./images/our-team/team-member-1-tablet-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-1-tablet@1x.jpg 1x, ./images/our-team/team-member-1-tablet@2x.jpg 2x"
                   media="(min-width: 768px)";
                 alt="Дизайнер"
               />
@@ -347,11 +349,11 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                  srcset="./images/our-team/team-member-2-mobile-1x.jpg 1x, ./images/our-team/team-member-2-mobile-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-2-mobile@1x.jpg 1x, ./images/our-team/team-member-2-mobile@2x.jpg 2x"
                   media="(max-width: 767px)" ;
-                  srcset="./images/our-team/team-member-2-desktop-1x.jpg 1x, ./images/our-team/team-member-2-desktop-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-2-desktop@1x.jpg 1x, ./images/our-team/team-member-2-desktop@2x.jpg 2x"
                   media="(min-width: 1200px)";
-                  srcset="./images/our-team/team-member-2-tablet-1x.jpg 1x, ./images/our-team/team-member-2-tablet-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-2-tablet@1x.jpg 1x, ./images/our-team/team-member-2-tablet@2x.jpg 2x"
                   media="(min-width: 768px)";
                 alt="Разработчик"
               />
@@ -407,11 +409,11 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                srcset="./images/our-team/team-member-3-mobile-1x.jpg 1x, ./images/our-team/team-member-3-mobile-2x.jpg 2x"
+                srcset="./images/our-team/team-member-3-mobile@1x.jpg 1x, ./images/our-team/team-member-3-mobile@2x.jpg 2x"
                   media="(max-width: 767px)" ;
-                  srcset="./images/our-team/team-member-3-desktop-1x.jpg 1x, ./images/our-team/team-member-3-desktop-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-3-desktop@1x.jpg 1x, ./images/our-team/team-member-3-desktop@2x.jpg 2x"
                   media="(min-width: 1200px)";
-                  srcset="./images/our-team/team-member-3-tablet-1x.jpg 1x, ./images/our-team/team-member-3-tablet-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-3-tablet@1x.jpg 1x, ./images/our-team/team-member-3-tablet@2x.jpg 2x"
                   media="(min-width: 768px)";
                 alt="Маркетолог"
               />
@@ -467,11 +469,11 @@
             <li class="our-team-list-item">
               <img
                 class="photo-team"
-                  srcset="./images/our-team/team-member-4-mobile-1x.jpg 1x, ./images/our-team/team-member-4-mobile-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-4-mobile@1x.jpg 1x, ./images/our-team/team-member-4-mobile@2x.jpg 2x"
                   media="(max-width: 767px)" ;
-                  srcset="./images/our-team/team-member-4-desktop-1x.jpg 1x, ./images/our-team/team-member-4-desktop-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-4-desktop@1x.jpg 1x, ./images/our-team/team-member-4-desktop@2x.jpg 2x"
                   media="(min-width: 1200px)";
-                  srcset="./images/our-team/team-member-4-tablet-1x.jpg 1x, ./images/our-team/team-member-4-tablet-2x.jpg 2x"
+                  srcset="./images/our-team/team-member-4-tablet@1x.jpg 1x, ./images/our-team/team-member-4-tablet@2x.jpg 2x"
                   media="(min-width: 768px)";
                 alt="Дизайнер интерфейсов"
               />

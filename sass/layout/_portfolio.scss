@@ -1,6 +1,7 @@
 /*portfolio*/
 .portfolio-padding {
   padding-bottom: 60px;
+  z-index: 0;
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
   }
@@ -57,6 +58,7 @@
 
 .flex-container {
   display: flex;
+
   flex-wrap: wrap;
   margin-bottom: 50px;
   justify-content: center;
@@ -110,6 +112,7 @@
   .portfolio-link {
     display: block;
     outline: none;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus {
@@ -119,6 +122,7 @@
   }
   .example-photo {
     display: block;
+
     width: 450px;
     height: 294px;
     @media screen and (min-width: 768px) {
