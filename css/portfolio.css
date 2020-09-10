@@ -57,9 +57,9 @@ h3 {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -1076,12 +1076,6 @@ h3 {
 
 .coloured {
   background-color: #f5f4fa;
-}
-
-@media screen and (max-width: 767px) {
-  .coloured {
-    display: inline-block;
-  }
 }
 
 @media screen and (max-width: 767px) {

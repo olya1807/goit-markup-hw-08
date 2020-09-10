@@ -8,9 +8,9 @@
 }
 .coloured {
   background-color: $middle-dark-backgroud-color;
-  @media screen and (max-width: 767px) {
-    display: inline-block;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: inline-block;
+  // }
 }
 .team-header {
   @media screen and (max-width: 767px) {
