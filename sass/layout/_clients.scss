@@ -1,4 +1,7 @@
 /*Постоянные клиенты*/
+.clients-section {
+  margin-bottom: 94px;
+}
 .client-header {
   @media screen and (max-width: 767px) {
     font-size: 28px;
@@ -11,14 +14,14 @@
   @media screen and (max-width: 480px) {
     display: inline-flex;
     width: 100%;
-    flex-wrap: wrap;
+    //   flex-wrap: wrap;
   }
 
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: start;
-  text-align: left;
+  // align-items: flex-start;
+  // justify-content: start;
+  // text-align: left;
 }
 .flex-client-item {
   display: flex;
@@ -67,12 +70,10 @@
   }
   @media screen and (min-width: 768px) {
     width: 226px;
-    height: 90px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 90px;
   }
 }
 .client-logo-svg {

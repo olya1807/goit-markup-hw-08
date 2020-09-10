@@ -931,7 +931,6 @@ h3 {
 @media screen and (min-width: 768px) {
   .about-us-list-item {
     width: 354px;
-    height: 251px;
   }
 }
 
@@ -1078,10 +1077,38 @@ h3 {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 479px) {
+  .coloured {
+    display: inline-block;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .coloured {
+    width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team-header {
     font-size: 28px;
     line-height: 1.18;
+  }
+}
+
+.our-team-list {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    flex-wrap: wrap;
+    display: flex;
   }
 }
 
@@ -1231,6 +1258,10 @@ h3 {
 }
 
 /*Постоянные клиенты*/
+.clients-section {
+  margin-bottom: 94px;
+}
+
 @media screen and (max-width: 767px) {
   .client-header {
     font-size: 28px;
@@ -1242,16 +1273,12 @@ h3 {
 .flex-client-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: start;
-  text-align: left;
 }
 
 @media screen and (max-width: 480px) {
   .flex-client-list {
     display: inline-flex;
     width: 100%;
-    flex-wrap: wrap;
   }
 }
 
@@ -1305,14 +1332,12 @@ h3 {
 @media screen and (min-width: 768px) {
   .flex-client-link {
     width: 226px;
-    height: 90px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .flex-client-link {
     width: 170px;
-    height: 90px;
   }
 }
 
