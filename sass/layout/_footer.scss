@@ -1,7 +1,11 @@
 /*footer*/
 footer {
-  height: 603px;
+  // height: 603px;
+  // width: 100%;
   text-align: center;
+  // display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 60px;
   background-color: $footer-backgroung;
 
@@ -101,7 +105,7 @@ footer {
   }
 }
 .join {
-  display: block;
+  display: inline-block;
   font-weight: $secondary-font-weight;
   margin-top: 72px;
   margin-bottom: 20px;
@@ -161,7 +165,7 @@ footer {
 
 .follow-us {
   display: block;
-  width: 100%;
+  // width: 100%;
   // width: 570px;
   align-items: center;
   // margin-top: 72px;
@@ -197,7 +201,7 @@ footer {
 }
 
 .form-contact-us {
-  display: block;
+  // display: block;
   margin-top: 20px;
   @media screen and (min-width: 1200px) {
     width: 570px;
